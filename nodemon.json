@@ -1,0 +1,6 @@
+{
+  "watch": ["**/*.ts"],
+  "ext": "ts,json",
+  "ignore": ["node_modules", "dist"],
+  "exec": "node -r dotenv/config -r ts-node/register index.ts"
+}

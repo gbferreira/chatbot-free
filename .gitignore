@@ -1,0 +1,4 @@
+/auth
+/dist
+/node_modules
+models/llama.gguf
