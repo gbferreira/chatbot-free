@@ -12,10 +12,6 @@ export interface QuestionResponseAnalysis {
   extractedValue: string | null;
 }
 
-
-
-
-
 export async function collectExtractionData(chatQuestionRunnedId: number): Promise<Record<string, string>> {
   const responses = await ChatRepository.getResponsesForChatQuestionRunned(chatQuestionRunnedId);
   logFlow("extraction", "collecting extraction data from previous responses", {
